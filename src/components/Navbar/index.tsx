@@ -43,7 +43,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "#16abff33" }}>
+    <AppBar position="static" style={{ backgroundColor: "inherit" }}>{/* #020614 */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <FitnessCenterIcon
@@ -133,7 +133,7 @@ function ResponsiveAppBar() {
                   color: "#f5f5f5",
                   display: "block",
                   "&:hover": {
-                    textShadow:  '0 0 5px #f5f5f5, 0 0 10px #f5f5f5, 0 0 10px #f5f5f5, 0 0 10px #f5f5f5, 0 0 10px #f5f5f5'
+                    textShadow:  ' 0 0 5px #f5f5f5, 0 0 5px #f5f5f5'
                   },
                 }}
               >
