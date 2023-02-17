@@ -1,0 +1,46 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: #000;
+  justify-content: space-between;
+  z-index: 0.5s ease;
+}
+
+.logo {
+  font-size: 2.8em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo2letter {
+  color: var(--primary-glow);
+}
+
+.ol {
+  display: flex;
+  margin: auto 0;
+}
+
+.ol li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.ol li Link {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.glow{
+    color: white;
+    text-shadow: 0 0 10px #f5f5f5,
+                 0 0 20px #f5f5f5,
+                 0 0 40px #f5f5f5,
+                 0 0 80px #f5f5f5,
+                 0 0 180px #f5f5f5;
+}
