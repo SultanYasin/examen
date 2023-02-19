@@ -36,11 +36,3 @@
   text-transform: capitalize;
 }
 
-.glow{
-    color: white;
-    text-shadow: 0 0 10px #f5f5f5,
-                 0 0 20px #f5f5f5,
-                 0 0 40px #f5f5f5,
-                 0 0 80px #f5f5f5,
-                 0 0 180px #f5f5f5;
-}

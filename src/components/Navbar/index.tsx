@@ -11,12 +11,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import logo_img from '../../../assets/Logo_2.jpg'
+
 
 import styles from './index.module.css'
+import Image from "next/image";
 
-const pages = ["Products", "Pricing", "Trainers", "DIET"];
+const pages = ["Products", "Pricing", "Trainers", "Diet"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -42,13 +43,19 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  function logo(){
+    return(
+    <p  style={{textAlign: "center"}}>
+      <Image src={logo_img} alt="logo" width={40} height={40} style={{borderRadius: "50px"}} /> 
+      S<span style={{ color: "gray" }}>U</span></p>
+    )
+  }
+
   return (
     <AppBar position="static" style={{ backgroundColor: "inherit" }}>{/* #020614 */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <FitnessCenterIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          />
+     
           <Typography
             variant="h6"
             noWrap
@@ -64,7 +71,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            S<span style={{ color: "gray" }}>U</span>
+           {logo()}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -103,7 +110,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -120,7 +127,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+           {logo()}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -145,7 +152,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="00" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
