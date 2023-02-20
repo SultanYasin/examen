@@ -7,18 +7,37 @@ import Grid from "@mui/material/Grid";
 export default function Home() {
   return (
     <>
-      <Grid className={styles.main} container spacing={1}>
-        <Grid item>
-          <Typography className={styles.description}>
-            Help for ideal body fitness
-          </Typography>
-        </Grid>
-
-        <FullGridElement>
-          <PrimaryButton>Get started</PrimaryButton>
-          <SecondaryButton>Login</SecondaryButton>
-        </FullGridElement>
+      <Grid container spacing={1} className= {styles.main} >
+        <div className={styles.content} > 
+        <h3 className={styles.h3}>
+          help for ideal <br /> body fitness
+        </h3>
+        
+        <button className={styles.btn}>Get started</button> 
+        </div>
       </Grid>
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <FullGridElement>
+          <PrimaryButton>Get started</PrimaryButton>
+          <SecondaryButton>Login</SecondaryButton>
+        </FullGridElement> */
